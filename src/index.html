@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <h1>Traductor de Cifrado Cesar</h1>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+      <h1>Traductor de Cifrado Cesar</h1>
     <div id="root">
-      <!--el div contiene la caja de texto donde se ingresara el mensaje 
-      plano a cifrar(y devolvera el resultado de un mensaje cifrado convertido a plano)-->
-    <div class="oritext">
+      <!--el div contiene la caja de texto donde se ingresara el mensaje -->
+      <div class="text">
         <label for="plainmsg">Introduzca el texto a convertir</label>
-      <div class="input" id="form1">
         <textarea id="plainmsg" ></textarea>
-       <button type= "button" id="cipher">Convertir a crifado</button>
-        
+        <button type= "button" id="cipher">Convertir a crifado</button>
       </div>
-    </div>
-    <!--el div contiene la caja de texto donde se devolvera el texto
-     cifrado (y tambien donde se ingresara un texto cifrado para convertir a plano)-->
-    <div class="convtext">
-        <label for="ciphermsg">Introduzca el texto codificado</label>
-      <div class="input" id="form2">
-        <textarea id="ciphermsg" ></textarea>
-        <button type= "button" id="nocipher">Convertir a texto</button>
-      </div>
-    </div>
     <!--colocar un caja de  texto para ingresar el nro de desplazamientos para el cifrado-->
-    <div id="keycipher">
+      <div id="keycipher">
       <p>Clave de cifrado <input type="number" id="key" placeholder="Escriba un número"></p>
-
-    </div>
+      </div>
+      <!--el div contiene la caja de texto donde se devolvera el texto
+     cifrado -->
+      <div class="text">
+        <label for="cipmsg">Introduzca el texto codificado</label>
+        <textarea id="cipmsg"></textarea>
+        <button type="button" id="nocipher">Contertir a texto</button>
+      </div>
+    
+    
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
