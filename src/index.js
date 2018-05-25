@@ -13,6 +13,6 @@
   }
   btnDeCipher.addEventListener("click",btndeCifrar);
   let btnborrar =()=>{
-   document.getElementById("cipmsg").value;
-  }
-  reset.addEventListener("click",btnborrar)
+  //document.getElementById("cipmsg").value;
+  //}
+  //reset.addEventListener("click",btnborrar)
