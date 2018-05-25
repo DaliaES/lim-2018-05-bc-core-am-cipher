@@ -1,16 +1,39 @@
 #root{
-    width:80%;
+    width:50%;
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.text{
+/*.box{
     width: 33.3%;
-    float:left
+    height: 300px;
+	margin: 20px;
+	box-sizing: border-box;
+	font-style: 50px;
+	text-align: center;
 }
-
-#keycipher{
-    float:left;
-    width:33.3%
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    flex-flow:wrap; 
+}*/
+.box{
+    width: 33.3%;
+    float: left;
 }
-
-    
+.space{
+    border-bottom-width: 56px;
+    margin-bottom: 10px;
+}
+.box-size{
+    WIDTH: 190px;
+    HEIGHT: 107px;
+}

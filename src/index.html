@@ -7,26 +7,39 @@
   </head>
   <body>
       <h1>Traductor de Cifrado Cesar</h1>
-    <div id="root">
-      <!--el div contiene la caja de texto donde se ingresara el mensaje -->
-      <div class="text">
-        <label for="plainmsg">Introduzca el texto a convertir</label>
-        <textarea id="plainmsg" ></textarea>
-        <button type= "button" id="cipher">Convertir a crifado</button>
+    <div id="root" class="container"> 
+     <!--el div contiene la caja de texto donde se ingresara el mensaje -->
+     <div class="box">
+      <div class="space">
+      <label for="plainmsg">Introduzca el texto original</label>
       </div>
-    <!--colocar un caja de  texto para ingresar el nro de desplazamientos para el cifrado-->
-      <div id="keycipher">
-      <p>Clave de cifrado <input type="number" id="key" placeholder="Escriba un número"></p>
+      <div  >
+      <textarea name="plainmsg"id="plainmsg" class="box-size" ></textarea>
       </div>
-      <!--el div contiene la caja de texto donde se devolvera el texto
-     cifrado -->
-      <div class="text">
-        <label for="cipmsg">Introduzca el texto codificado</label>
-        <textarea id="cipmsg"></textarea>
-        <button type="button" id="nocipher">Contertir a texto</button>
+      <div>
+      <button type= "button" id="btnCipher">Cifrar</button>
       </div>
-    
-    
+    </div>
+  <!--colocar un caja de  texto para ingresar el nro de desplazamientos para el cifrado-->
+    <div class="box">
+    <p class="space">Clave </p>
+    <div  >
+        <input type="number" id="key" placeholder="Número de desplazamiento">
+    </div>
+    </div>
+    <!--el div contiene la caja de texto donde se devolvera el texto
+   cifrado -->
+    <div class="box">
+      <div class="space">
+          <label for="cipmsg">Introduzca el texto cifrado</label>
+      </div>
+      <div >
+          <textarea name="cipmsg"id="cipmsg" class="box-size"></textarea>
+      </div>
+    <div>
+      <button type="button" id="btnDeCipher">Descifrar</button>
+    </div>
+    </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
