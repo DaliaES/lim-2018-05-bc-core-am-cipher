@@ -11,7 +11,7 @@
     let btndeCifrar = ()=>{
     document.getElementById("plainmsg").value = document.getElementById("cipmsg").value;
   }
-  //btnDeCipher.addEventListener("click",btndeCifrar);
+  btnDeCipher.addEventListener("click",btndeCifrar);
   //let btnborrar =()=>{
   //document.getElementById("cipmsg").value;
   //}
