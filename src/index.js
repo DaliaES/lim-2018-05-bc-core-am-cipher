@@ -3,28 +3,16 @@
 let encode = (offset,string)=>{
   let msgcipher = "";
   let number = parseInt(offset);
-  let i= 0;
-  for (i=0;i<string.length;i++){
+  for ( let i=0;i<string.length;i++){
     let asci = string.charCodeAt(i);
     if (65 <= asci && asci <=  90){
      let ecuaCif = ((asci - 65 + number)%26 + 65);
-     
     }
-     else  if (97 <= asci && asci <=  122){
+      else  if (97 <= asci && asci <=  122){
      ecuaCif = (asci - 97 + number)%26 + 97;
-    
      }
-     else if(asci==32){
-      ecuaCif = 32;
-     
-     }
-     else if (48 <= asci && asci <=  57){
-       ecuaCif = ((asci - 48 + number)%10 + 48);
-       
-     }
-     else {
-       ecuaCif = asci
-       
+        else {
+       ecuaCif = asci;  
      }
        msgcipher += String.fromCharCode(ecuaCif);
   }
@@ -35,26 +23,17 @@ let encode = (offset,string)=>{
   let msgdescipher = "";
   let number = parseInt(offset);
   let i= 0;
-  for (i=0;i<string.length;i++){
+  for (let i=0;i<string.length;i++){
     let asci = string.charCodeAt(i);
     if (65 <= asci && asci <=  90){
-     let ecuaDesCif = (asci - 65 - number)%26 + 65;
-     msgdescipher += String.fromCharCode(ecuaDesCif);  
-    } 
+     let ecuaDesCif = (asci - 65 - number)%26 + 65; 
+     msgdescipher += String.fromCharCode(ecuaDesCif);
+     } 
      else  if (97 <= asci && asci <=  122){
      ecuaDesCif = ((asci - 97 - number)%26 + 97);
      }
-     else if(asci==32){
-     ecuaDesCif = 32;
-     msgdescipher += String.fromCharCode(ecuaDesCif);
-     }
-     else if (48 <= asci && asci <=  57){
-       ecuaDesCif = ((asci - 48 - number)%10 + 48);
-       msgdescipher += String.fromCharCode(ecuaDesCif);
-     }
      else  {
-       ecuaDesCif = asci;
-       
+     ecuaDesCif = asci;   
      }
      msgdescipher += String.fromCharCode(ecuaDesCif);
   }
