@@ -71,14 +71,11 @@ window.cipher = {
   },
   createCipherWithOffset: (offset) => {
     let output = {
-            encode: (string)=>{
-                return cipher.encode(offset,string)
-            },
-            decode: (string)=>{
-                return cipher.decode(offset,string)
-            }
+            encode: (string) =>{ 
+                return cipher.encode(offset,string)},
+            decode: (string) =>{ 
+                return cipher.decode(offset,string)}
         }
-
         return output
     }
   }
