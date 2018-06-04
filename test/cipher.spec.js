@@ -1,4 +1,4 @@
-let assert = require ('chai').assert;
+
 describe('cipher', () => {
 
   it('debería ser un objeto', () => {

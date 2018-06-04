@@ -1,20 +1,30 @@
 body {
-    margin:40px;
+    margin:35px;
 }
 header{
-    background-color: rgb(240,120,22);
+    background-color:rgb(255, 219, 77);
     text-align: center;
-    height: 80px;
-    padding: 1em 2em;
+    height: 90px;
+    padding: 10px;
+    font-family: "bradley hand", cursive;
+    font-weight: 900;
+    font-style: inherit;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1{
+    line-height: 0.1px ;
+    color:#6666ff;
 }
 .container{
     padding: 1em 2em;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
     width: 70%;
     height:350px;
     box-sizing: border-box;
-    background-color:rgb(117,200,11);
+    background-color:#c4d1ed;
 	/*height: auto; */
 }
 #root{
@@ -28,6 +38,7 @@ header{
     box-sizing: border-box;
     float:left;  
     text-align: center;
+   
 }
 #keybox{
     padding:50px;
@@ -39,26 +50,39 @@ header{
 }
 .letra{
     font-size: 25px;
-    font-family: Oxygen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(102, 0, 51);
+    font-weight: bold
 }
 .space{
     border-bottom-width: 56px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(102, 0, 51);
+    font-weight: bold;
 }
 .box-size{
     width: 80%;
     height: 180px;
+    border-radius: 35px 0px 35px 0px;
+    border: 3px solid #5878ca;
 }
 #key{
-    width: 100%;
+    width: 90px;
     height: 24px;
+    border: 2px solid #5878ca;
 }
 button{
     margin-top: 10px;
-    width: 80px;
+    width: 90px;
     height:30px;
-    font-size: 15px;
+    font-size: 17px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #4d4dff ;
+    background-color: #6666ff;
+    font-family: "bradley hand", cursive;
 }
 @media screen and (min-width: 780px) and (max-width: 1040px){
     .container{
@@ -76,6 +100,10 @@ button{
     }
 }
 @media screen and (min-width: 480px) and (max-width: 780px){
+    h1 {
+     font-size: 45px;
+     line-height: 17px;
+    }
     .container{
         height:900px;
         width:80%;
@@ -103,6 +131,8 @@ button{
     h1{
         margin-bottom: 40%;
         margin-top: 0;
+        font-size: 25px;
+        line-height: 50px;
     }
     
     .container{
@@ -111,7 +141,7 @@ button{
         margin-top: 30px;
         margin-right: 0;
         margin-left: 0;
-        background-color: purple;
+        background-color: #c4d1ed;
         padding: 10px;
     } 
     .box{
